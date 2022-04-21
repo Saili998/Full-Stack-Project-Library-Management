@@ -1,0 +1,38 @@
+<div align="center">
+<h2 align="center"> Add Book </h2>
+</div>
+      <br><br>
+<div class="d-flex justify-content-center align-items-center">
+      <img src="assets/images/addimg.jpeg" width="600px" height="450px" alt="" class="m-3 bgimg">
+      <div style="background-image: url('assets/images/addform.jpeg');" class="m-3 p-4 addform">
+        <form #insertform="ngForm" (ngSubmit)="insertdata(insertform)" class="mx-auto row my-5">
+          <div class="form-group col-12">
+          <label class="form-label"> Book ID : </label>
+          <input type="text" #id (ngModel)="id" name="id" id="id" class="form-control" autocomplete="off">
+          </div> <br>
+          <div class="form-group col-12">
+          <label class="form-label"> Book Name : </label>
+          <input type="text" #name (ngModel)="name" name="name" id="name" class="form-control" autocomplete="off">
+          </div><br>
+          <div class="form-group col-6">
+          <label class="form-label"> Book Price : </label>
+          <input type="text" #price (ngModel)="price" name="price" id="price" class="form-control" autocomplete="off">
+          </div><br>
+          <div class="form-group col-6">
+            <label class="form-label"> Book Status : </label>
+            <select class="form-select" #status (ngModel)="status" name="status" id="status">
+              <option selected>Available</option>
+              <option value="Purchased">Purchased</option>
+              <option value="Borrowed">Borrowed</option>
+              <option value="Returned">Returned</option>
+            </select>
+          </div>
+          <div class="form-group col-12 mt-3">
+            <input type="submit" value="Add" class="btn btn-dark">
+          </div>
+        </form>
+      </div>
+</div>
+<a routerLink="/services"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+</svg> back</a>

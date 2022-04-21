@@ -1,0 +1,15 @@
+.nav-link{
+    color: black;
+}
+#logo{
+    width: 20px;
+    height: 20px;
+}
+#libraree{
+    padding: 30px;
+    background-color: goldenrod;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    font-weight: bold;
+}

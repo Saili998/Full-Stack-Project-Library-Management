@@ -1,0 +1,21 @@
+h2{
+    border: 3px solid rgb(234, 137, 115);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 300px;
+    padding: 20px;
+}
+table, th, td{
+    background-color: rgba(255, 255, 255, 0.681);
+    border: 1px solid black;
+    font-weight: bold;
+}
+a{
+    margin: 30px;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    position: absolute;
+    bottom: 0;
+}
